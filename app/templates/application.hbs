@@ -1,9 +1,13 @@
 <h1>Test</h1>
 
+<button {{action 'fill'}}>Fill</button>
+<button {{action 'dotest'}}>Delete</button><br/>
+<br/>
+<br/>
 {{#each model.posts as |p|}}
-{{p.name}}
+{{p.name}}<br/>
 {{/each}}
 
 {{#each model.authors as |a|}}
-{{a.test}}
+{{a.test}}<br/>
 {{/each}}
