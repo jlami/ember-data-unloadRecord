@@ -1,5 +1,9 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
+<h1>Test</h1>
 
-{{outlet}}
+{{#each model.posts as |p|}}
+{{p.name}}
+{{/each}}
+
+{{#each model.authors as |a|}}
+{{a.test}}
+{{/each}}
